@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F6F3EC; /* Warm Ivory */
+  --foreground: #232A27; /* Charcoal */
+  --primary: #193E32;    /* Forest Green */
+  --primary-foreground: #FAF8F5;
+  --sand: #B69A70;       /* Sand Gold */
+  --sand-foreground: #FFFFFF;
+  --card: #FFFFFF;
+  --card-foreground: #232A27;
+  --border: #E5DFD5;
+  --ring: #193E32;
+}
+
+* {
+  border-color: #E5DFD5;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+  font-family: var(--font-alexandria), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F6F3EC;
+  color: #232A27;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #F6F3EC;
+  color: #232A27;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background-color: #193E32;
+  color: #F6F3EC;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D8CF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #193E32;
+}
+
+/* Glassmorphism & subtle luxury blur */
+.luxury-glass {
+  background: rgba(246, 243, 236, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark-luxury-glass {
+  background: rgba(25, 62, 50, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
